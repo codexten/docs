@@ -1,0 +1,11 @@
+{
+  "name": "codexten/docs",
+  "description": "Codexten Docs",
+  "keywords": [
+    "yii2",
+    "codexten",
+    "docs"
+  ],
+  "type": "library",
+  "license": "BSD-3-Clause"
+}
