@@ -7,5 +7,10 @@
     "docs"
   ],
   "type": "library",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev"
+    }
+  }
 }
