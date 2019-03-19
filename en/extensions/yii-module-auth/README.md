@@ -25,6 +25,47 @@ or add
 
 ```
 
-## Configurations
+## Configurations Override 
+
+```php
+ // auth module
+    [
+        'modules' => [
+            'auth' => [
+                'enableRegistration' => true,
+            ],
+        ],
+        'as globalAccess' => [
+            'class' => '\codexten\yii\behaviors\GlobalAccessBehavior',
+            'rules' => [
+                [
+                    'controllers' => ['site', 'setup-data'],
+                    'allow' => true,
+                    'roles' => ['?', '@'],
+                ],
+                [
+                    'allow' => true,
+                    'roles' => ['user'],
+                ],
+            ],
+        ],
+        'components' => [
+            'view' => [
+                'theme' => [
+                    'pathMap' => [
+                        '@codexten/yii/modules/auth/' => [
+                            '@site/modules/auth/',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ]
+
+```
+
+## Override Views
+
+
 
 ## Usage
