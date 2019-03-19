@@ -21,8 +21,6 @@ or add
       ]
   }
 }
-}
-
 ```
 
 ## Configurations Override 
