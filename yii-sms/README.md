@@ -34,3 +34,11 @@ or add
 
 
 ## Usage
+```php
+
+Yii::$app->sms->send($number)
+
+```
+
+## Links
+ https://control.textlocal.in/docs/
