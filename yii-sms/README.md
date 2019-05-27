@@ -1,44 +1,57 @@
-# SMS
+Auth module for Yii 2.0 +
+=========================
+This Module provide basic authentication functionality such as registration,
+login, forgotten password, otp verification, email verification ...
 
-## Installation
+Installation
+------------
 
-To install, add the following to composer.json file
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```
+composer require --prefer-dist codexten/yii-sms:"^2.0.0"
+```
 
 or add
 
 ```json
-{
-  "require": {
-    ***
-   "codexten/yii-sms": "~2.0"
-  },
-  "extra": {
-    "config-plugin": {
-      ***
-      "???": [
-        "$sms",
-        "config/???.php"
-      ]
-  }
-}
+"codexten/yii-sms": "^2.0.0"
 ```
 
-## params
+to the require section of your composer.json.
+
+
+Configuration
+-------------
 
 ```php
+// params.php
+return \yii\helpers\ArrayHelper::merge(
+    // other configurations
+    [],
+    // $sms
+    [
+        //sms
+        'sms.defaultDriver' => 'textlocal',
+    
+        // textlocal
+    
+        //The email address used to log into Textlocal.
+        'textlocal.username' => '',
+        // visit https://control.textlocal.in/docs/ to get h
+        'textlocal.hash' => '',
+        'textlocal.sender' => '',
+    
+        // xpresssms
+        'xpresssms.username' => '',
+        'xpresssms.password' => '',
+        'xpresssms.sender' => '',
+    ]
+    );
 
 ```
 
-## Override Views
-
-
-
-## Usage
-```php
-
-Yii::$app->sms->send($number)
-
-```
-
-## Links
- https://control.textlocal.in/docs/
+## customization
+TBD
