@@ -71,11 +71,18 @@ return \yii\helpers\ArrayHelper::merge(
         ],
         'container' => [
             'definitions' => [
+                // forms
                 \codexten\yii\modules\auth\models\RegistrationForm::class => [
                     'class' => RegistrationForm::class,
                 ],
                 \codexten\yii\modules\auth\models\LoginForm::class => [
                     'class' => LoginForm::class,
+                ],
+                
+                //actions
+                AccountLoginAction::class => [
+                    'class' => AccountLoginAction::class,
+                    'layout' => null,
                 ],
             ],
         ],
