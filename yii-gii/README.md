@@ -24,17 +24,19 @@ to the require section of your composer.json.
 Configuration
 -------------
 
-```php
-
-return \yii\helpers\ArrayHelper::merge(
-    // other configurations
-    [],
-    // $moduleCountry
-    [
-       
-    ]
-    );
-
+```yml
+params:
+  messageCategory: codexten:module:country
+migration:
+  create_country_table:
+    fields: |
+      code:string(50),
+      is_enabled:boolean
+model:
+  country:
+crud:
+  country:
+    modelClass: codexten\yii\modules\country\models\Country
 ```
 
 ## customization
