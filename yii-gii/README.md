@@ -21,9 +21,10 @@ or add
 to the require section of your composer.json.
 
 
-Configuration
--------------
+Examples
+--------
 
+Country Module
 ```yml
 # config/gii.yml
 params:
@@ -39,6 +40,33 @@ crud:
   country:
     modelClass: codexten\yii\modules\country\models\Country
 ```
+
+Geo Module
+```yml
+migration:
+  create_province_table:
+    fields: |
+      country_id:integer:notNull:foreignKey(country),
+      code:string(50),
+      name:string(255),
+      abbreviation:string(255)
+model:
+  province:
+crud:
+  province:
+    modelClass: codexten\yii\modules\geo\models\Province
+
+```
+Commands
+--------
+
+To generate migration
+```ssh
+
+./vendor/bin/hidev gii yii-module-geo
+
+```
+
 
 ## customization
 
