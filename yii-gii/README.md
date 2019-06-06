@@ -25,6 +25,7 @@ Configuration
 -------------
 
 ```yml
+# config/gii.yml
 params:
   messageCategory: codexten:module:country
 migration:
