@@ -11,5 +11,6 @@ All codexten packages documentation
 
 ## Tutorials
 
+* [Cpanel Installation and configuration](cpanel-installation-and-configuration.md)
 * [Extend Module from another modules](extend-module-from-another-module.md)
 
