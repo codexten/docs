@@ -31,9 +31,9 @@ Menu Items
         'active' => controllerId() == 'country',
     ],
     [
-        'label' => 'Provience',
+        'label' => 'Province',
         'icon' => 'list',
-        'url' => ['/geo/provience/index'],
+        'url' => ['/geo/province/index'],
         'active' => controllerId() == 'provience',
     ],
     [
