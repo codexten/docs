@@ -27,7 +27,7 @@ Menu Items
     [
         'label' => 'Countries',
         'icon' => 'flag',
-        'url' => ['/geo/country/index'],
+        'url' => ['/country/country/index'],
         'active' => controllerId() == 'country',
     ],
     [

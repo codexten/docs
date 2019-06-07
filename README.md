@@ -7,3 +7,9 @@ All codexten packages documentation
 * [Country Module](yii-module-country)
 * [Geo Module](yii-module-geo)
 * [Console App](yii-app-console)
+
+
+## Tutorials
+
+* [Extend Module from another modules](extend-module-from-another-module.md)
+
