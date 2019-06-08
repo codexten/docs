@@ -13,4 +13,4 @@ All codexten packages documentation
 
 * [Cpanel Installation and configuration](cpanel-installation-and-configuration.md)
 * [Extend Module from another modules](extend-module-from-another-module.md)
-* [GridView sorting and filtering](grid-view-sorting-and-filtering)
+* [GridView sorting and filtering](grid-view-sorting-and-filtering.md)
