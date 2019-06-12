@@ -1,19 +1,24 @@
 # Mailjet
 
-## Installation
+Installation
+------------
 
-To install, add the following to composer.json file
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```
+composer require --prefer-dist codexten/yii-mailjet:"^2.0.0"
+```
 
 or add
 
 ```json
-{
-  "require": {
-    ***
-   "codexten/yii-mailjet": "~2.0"
-  }
-}
+"codexten/yii-mailjet": "^2.0.0"
 ```
+
+to the require section of your composer.json.
+
 
 ## params
 
