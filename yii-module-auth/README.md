@@ -36,9 +36,13 @@ return \yii\helpers\ArrayHelper::merge(
         'modules' => [
             'auth' => [
                 'enableRegistration' => true,
+                'enableAutoLoginAfterRegistration' => true,
                 'controllerMap' => [
-                    'otp' => [
-                        'modelClass' => OtpVerificationForm::class,
+                    'phone-number-verification' => [
+                        'modelClass' => PhoneNumberVerificationForm::class,
+                    ],
+                    'email-verification' => [
+                        'modelClass' => EmailVerificationForm::class,
                     ],
                 ],
             ],
