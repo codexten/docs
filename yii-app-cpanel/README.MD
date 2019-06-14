@@ -35,9 +35,9 @@ First and foremost to Manage Cpanel in Local, Follow the steps:
 
 **Manage Cron Jobs**
 
-1. Access http://cpanel.yii/cron. ![](img/cronjob-index.png)
+1. Access http://cpanel.yii/cron. 
 
-    
+    ![](img/cronjob-index.png)
 
 2. Click on "create" button(green) on the upper right most corner.
 
@@ -67,3 +67,17 @@ First and foremost to Manage Cpanel in Local, Follow the steps:
    ![](img/process-create.png)
 
 3. Enter the Name and Run Command where name specified should be the name of the background process and Run command should be the project current instance of version followed by the process.
+
+4. Then create the process.
+
+5. The created process appears in the http://cpanel.yii/process.
+
+6. These processes are provided with options to run,edit and delete.
+
+7. The process works in the project only if we run the background process.
+
+   ![](img/process-run.png)
+
+8. We can similarly stop the process run on clicking on the stop.
+
+9. We can edit and delete the process upon requirement using edit and delete options provided. 
