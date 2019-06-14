@@ -35,9 +35,9 @@ First and foremost to Manage Cpanel in Local, Follow the steps:
 
 **Manage Cron Jobs**
 
-1. Access http://cpanel.yii/cron. 
+1. Access http://cpanel.yii/cron.
 
-    ![](img/cronjob-index.png)
+   ![](img/process-index.png)
 
 2. Click on "create" button(green) on the upper right most corner.
 
