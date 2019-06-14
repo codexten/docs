@@ -13,11 +13,10 @@
 
 **Introduction**
 
-Cpanel is used to manage Cron Jobs and Background processes of a project.
+- Cpanel is used to manage Cron Jobs and Background processes of a project.
 
-The Cron Jobs include the jobs that run in daily, every minute, every five minutes,  hourly and last run. 
-
-The Background processes include the processes that are to be run in a project in background. Such a process is mail-queue. There can be other types of processes regarding the project.
+- The software utility cron is a time-based job scheduler in Unix-like computer operating systems. People who set up and maintain software environments use cron to schedule jobs (commands or shell scripts) to run periodically at fixed times, dates, or intervals.
+- A background process is a computer process that runs behind the scenes (i.e., in the background) and without user intervention.Typical tasks for these processes include logging, system monitoring, scheduling, and user notification
 
 
 
