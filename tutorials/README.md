@@ -10,3 +10,4 @@ Tutorials
 * [Learn markdown in 30 Minutes](learn-markdown-in-30-minutes.md)
 * [Learn SSH in 30 Minutes](learn-ssh-in-30-minutes.md)
 * [Learn Phpstrom in 30 Minutes](learn-phpstrom-in-30-minutes.md)
+* [Setup Project](setup-project.md)
