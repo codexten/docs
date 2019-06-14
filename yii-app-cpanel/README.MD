@@ -31,17 +31,17 @@ First and foremost to Manage Cpanel in Local, Follow the steps:
 
 3. Enter password as "admin" and sign in
 
-   ![](/home/codiac/projects/docs/img/cpanel-login.png)
+   ![](img/cpanel-login.png)
 
 **Manage Cron Jobs**
 
-1. Access http://cpanel.yii/cron. ![](/home/codiac/projects/docs/img/cronjob-index.png)
+1. Access http://cpanel.yii/cron. ![](img/cronjob-index.png)
 
     
 
 2. Click on "create" button(green) on the upper right most corner.
 
-    ![](/home/codiac/projects/docs/img/cronjob-create.png)
+    ![](img/cronjob-create.png)
 
 3. Enter the name of the Cron Job.
 
@@ -60,10 +60,10 @@ First and foremost to Manage Cpanel in Local, Follow the steps:
 
 1. Access http://cpanel.yii/process.
 
-   ![](/home/codiac/projects/docs/img/process-index.png)
+   ![](img/process-index.png)
 
 2. Click on "create" button(green) on the upper right most corner.
 
-   ![](/home/codiac/projects/docs/img/process-create.png)
+   ![](img/process-create.png)
 
 3. Enter the Name and Run Command where name specified should be the name of the background process and Run command should be the project current instance of version followed by the process.
