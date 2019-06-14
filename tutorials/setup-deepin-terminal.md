@@ -1,4 +1,4 @@
-#Setup Deepin Terminal for Development
+# Setup Deepin Terminal for Development
 
 
 
