@@ -5,9 +5,9 @@
 
 **[Authentication](#Authentication)**
 
-**[Manage Cron Jobs](#Manage_Cron_Jobs)**
+**[Manage Cron Jobs](#Manage-Cron-Jobs)**
 
-**[Manage Background Process](#Manage_Background_Process)**
+**[Manage Background Process](#Manage-Background-Process)**
 
 
 
