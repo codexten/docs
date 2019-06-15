@@ -1,6 +1,7 @@
 Tutorials
 =========
 
+* [How to contribute to this documentation](how-to-contribute-to-this-documentation.md)
 * [How to install Docker in Manjaro Deepin](how-to-install-docker-in-manjaro-deepin.md)
 * [Setup Deepin Terminal](setup-deepin-terminal.md)
 * [Learn Docker in 30 Minutes](learn-docker-in-30-minutes.md)
