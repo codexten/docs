@@ -1,4 +1,4 @@
-# SSH Key Installation
+# Learn SSH in 30 Minutes
 
 
 

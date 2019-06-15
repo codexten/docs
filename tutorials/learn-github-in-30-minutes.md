@@ -1,4 +1,4 @@
-# Git Hub registration
+# Learn GitHub in 30 Minutes
 
 
 

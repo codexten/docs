@@ -1,4 +1,4 @@
-# Git clone
+# Learn Git in 30 Minutes
 
 ​	
 
