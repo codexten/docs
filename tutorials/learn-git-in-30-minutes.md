@@ -84,7 +84,66 @@
   git add .
   ```
 
+***Steps***
+
+1. Open terminal (Ctl+Alt+T)
+
+2. Choose to move to the directory you are working on.
+
+   ```
+   cd docs
+   cd software-testing
+   ```
+
+3. Type the git add command.
+
+   ```
+   git add .
+   ```
+
    
 
 ***Git Commit***
 
+- The word commit itself quotes the meaning.
+
+- Here we save the changes made using git commit command.
+
+- The following command shows how to commit the changes made.
+
+  ```
+  git commit -m 'init'
+  ```
+
+- The -m indicates that a commit message follows.
+
+- 'init' is the commit message given in the above command.
+
+- The `git commit` takes the staged snapshot and commits it to the project history. 
+
+  
+
+***Steps***
+
+1. Open terminal (Ctl+Alt+T)
+
+2. Choose to move to the directory you are working on.
+
+   ```
+   cd docs
+   cd software-testing
+   ```
+
+3. Type the git add command if any new files are added.
+
+   ```
+   git add .
+   ```
+
+4. Type git commit command to save the changes so far.
+
+   ```
+   git commit -m 'init'
+   ```
+
+   
