@@ -19,6 +19,24 @@
 - A background process is a computer process that runs behind the scenes (i.e., in the background) and without user intervention.Typical tasks for these processes include logging, system monitoring, scheduling, and user notification
 
 
+## Installation
+
+```ssh
+git clone git@github.com:codexten/yii-cpanel-app.git
+cd cpanel
+cp .env.dist .env
+cp hidev-local.yml.dist hidev-local.yml
+```
+
+configure .env and hidev-local.yml files
+
+```ssh
+composer update --prefer-dist --no-progress --profile
+./vendor/bin/hidev deploy
+./vendor/bin/hidev nginx/deploy
+
+``` 
+
 
 **Authentication**
 
