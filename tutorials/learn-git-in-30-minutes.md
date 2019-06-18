@@ -84,6 +84,16 @@
   git add .
   ```
 
+- This command adds all the additional files.
+
+- When we add a particular file, we use the following type of command.
+
+  ```
+  git add locations.txt
+  ```
+
+  
+
 ***Steps***
 
 1. Open terminal (Ctl+Alt+T)
