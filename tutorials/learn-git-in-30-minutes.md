@@ -38,7 +38,7 @@
 
 
 
-***Git Clone***
+### Git Clone
 
 - If a project has already been set up in a central repository, the `git clone` command is the most common way for users to obtain a development copy. 
 - Cloning is generally a one-time operation. 
@@ -66,7 +66,7 @@
 
    
 
-***Git Add***
+### Git Add
 
 - You want to start keeping track of all your space station locations. 
 
@@ -113,7 +113,7 @@
 
    
 
-***Git Commit***
+### Git Commit
 
 - The word commit itself quotes the meaning.
 
@@ -157,3 +157,26 @@
    ```
 
    
+
+### Git Push
+
+- `git push` is most commonly used to publish an upload local changes to a central repository. 
+
+- After a local repository has been modified a push is executed to share the modifications with remote team 
+  members.
+
+- The following is used as the syntax.
+
+  ```
+  git push <remote> <branch>
+  ```
+
+- When we require to push to the origin master. We use the following command.
+
+  ```
+  git push -u origin master
+  ```
+
+
+
+Steps
