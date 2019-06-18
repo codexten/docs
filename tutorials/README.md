@@ -1,4 +1,5 @@
-# Tutorials
+Tutorials
+=========
 
 * [How to install Docker in Manjaro Deepin](how-to-install-docker-in-manjaro-deepin.md)
 * [Setup Deepin Terminal](setup-deepin-terminal.md)
