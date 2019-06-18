@@ -66,3 +66,25 @@
 
    
 
+***Git Add***
+
+- You want to start keeping track of all your space station locations. 
+
+- To do so, let's create a file about all your locations.
+
+- The file is un-tracked, meaning that Git sees a file not part of a previous commit.
+
+- Tell Git to track your new `locations.txt` file using the `git add` command. 
+
+- Just like when you created a file, the `git add` command doesn't return anything when you enter it correctly.
+
+- We can add all the changes you made using the following git add command.
+
+  ```
+  git add .
+  ```
+
+   
+
+***Git Commit***
+
