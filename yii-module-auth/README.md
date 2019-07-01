@@ -37,6 +37,7 @@ return \yii\helpers\ArrayHelper::merge(
             'auth' => [
                 'enableRegistration' => true,
                 'enableAutoLoginAfterRegistration' => true,
+                 'enablePasswordRecovery' => false,
                 'controllerMap' => [
                     'phone-number-verification' => [
                         'modelClass' => PhoneNumberVerificationForm::class,
