@@ -71,3 +71,31 @@ To generate migration
 ## customization
 
 TBD
+
+# TROUBLESHOOT
+
+if path in hidev-local.yml file is correct but the path is not available
+
+We should add it to the host file 
+
+steps:
+
+1. Search the required path in the host file in the terminal ALT+CTRL+T
+
+   ```
+   cat /etc/hosts
+   ```
+
+   This displays a list of IPs.
+
+2. ```
+   sudo nano /etc/hosts
+   ```
+
+   type the system password
+
+3. Add IP and its URL.
+
+4. CTRL+O (write out)
+
+5. CTRL+X (Exit)
