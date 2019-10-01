@@ -35,7 +35,42 @@ Add
 
 in  `composer.json` file.
 
-Note: you must run `composer update` 
+
+
+Go To:
+
+​		config->admin.php
+
+
+
+```
+[   
+	'modules' => [      
+		'report' => [     
+			'viewPath' => '@tms/sourcing/admin/modules/report/views',     
+			'controllerMap' => [        
+				'tr' => [          
+						'class' => ReportController::class,           
+						'reportClass' => UserReport::class,              
+						'gridViewClass' => UserReportGridView::class,           
+						'exportMenuClass' => UserReportExportMenu::class,         
+				],          
+			],    
+		],   
+	],  
+	'components' => [   
+			'view' => [        
+				'theme' => [       
+					'pathMap' => [     
+						'@moduleReport/views' => [                        											'@tms/sourcing/admin/modules/report/views',                   						 ],        
+              	],    
+           ],    
+		],  
+	],
+]
+```
+
+
 
 ### Usage
 
@@ -77,8 +112,9 @@ class UserReport extends Model implements ReportInterface
      public function attributeLabels()
     {
         return [
-            'facility_code' => 'Facility',
-            'created_at_range' => 'Created At',
+            'name' => 'Name',
+            'phn_no' => 'Phone Number',
+            'email'  => 'Email',
         ];
     }
 
@@ -89,4 +125,71 @@ The class extends from [[yii\base\Model]], a base class provided by Yii, commonl
 represent form data.The class implements from [[codexten\yii\modules\report\reports\ReportInterface]].
 
 The `UserReport` class contains three public members, `name` ,`phn_no` and `email`, which are used to store the data entered by the user.
+
+
+
+##### GridView Class
+
+The GridView widget is used to display data in a grid. It provides features like [sorting](https://www.yiiframework.com/doc/api/2.0/yii-widgets-baselistview#$sorter-detail), [paging](https://www.yiiframework.com/doc/api/2.0/yii-widgets-baselistview#$pager-detail) and also [filtering](https://www.yiiframework.com/doc/api/2.0/yii-grid-gridview#$filterModel-detail) the data.
+
+```
+use codexten\yii\helpers\ArrayHelper;
+use yii\grid\SerialColumn;
+
+class UserReportGridView extends GridView
+{
+
+ public function columns()
+    {
+        return ArrayHelper::merge(
+            parent::columns(),
+            [
+                'sl' => [
+                    'class' => SerialColumn::class,
+                ],
+                'name',
+                'phn_no',
+                'email',
+            ]
+        );
+    }
+    
+}
+```
+
+The class extends from [[codexten\yii\dataView\widgets\GridView]] 
+
+
+
+##### ExportMenu Class
+
+Export menu class is used to export data in various formats (e.g. excel, html, pdf, csv etc.) it just displays the export actions in form of a ButtonDropdown menu
+
+
+
+```
+use codexten\yii\dataView\grid\export\ExportMenu;
+
+class UserReportExportMenu extends ExportMenu
+{
+
+	public function columns()
+    {
+        return ArrayHelper::merge(
+            parent::columns(),
+            [
+                'sl' => [
+                    'class' => SerialColumn::class,
+                ],
+                'name',
+                'phn_no',
+                'email',
+            ]
+        );
+    }
+    	
+}
+```
+
+The class extends from [[codexten\yii\dataView\grid\export\ExportMenu]] 
 
