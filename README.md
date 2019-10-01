@@ -13,4 +13,4 @@ All codexten packages documentation
 * [Country Module](yii-module-country)
 * [Geo Module](yii-module-geo)
 * [Console App](yii-app-console)
-* [Rport Module](yii-module-report)
+* [Report Module](yii-module-report)
