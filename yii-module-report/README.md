@@ -43,7 +43,11 @@ Go To:
 
 
 
+
+
 ```
+use codexten\yii\modules\report\controllers\ReportController;
+
 [   
 	'modules' => [      
 		'report' => [     
