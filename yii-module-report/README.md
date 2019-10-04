@@ -51,7 +51,8 @@ use codexten\yii\modules\report\controllers\ReportController;
 [   
 	'modules' => [      
 		'report' => [     
-			'viewPath' => '@tms/sourcing/admin/modules/report/views',     
+			'viewPath' => '@tms/sourcing/admin/modules/report/views',  
+            //set the view path 
 			'controllerMap' => [        
 				'tr' => [          
 						'class' => ReportController::class,           
@@ -62,15 +63,18 @@ use codexten\yii\modules\report\controllers\ReportController;
 			],    
 		],   
 	],  
-	'components' => [   
-			'view' => [        
-				'theme' => [       
-					'pathMap' => [     
-						'@moduleReport/views' => [                        											'@tms/sourcing/admin/modules/report/views',                   						 ],        
-              	],    
-           ],    
-		],  
-	],
+	'components' => [
+            'view' => [
+                'theme' => [
+                    'pathMap' => [
+                        '@moduleReport/views' => [
+                            '@tms/sourcing/admin/modules/report/views',
+                            //set the view path 
+                        ],
+                    ],
+                ],
+            ],
+        ],
 ]
 ```
 
@@ -82,6 +86,8 @@ The module has the ability to search the data,view data as grid-view and export 
 
 To create a report you must create class for Search  Model (`UserReport`)  ,  grid-view ( `UserReportGridView` )  and for Export  menu (`UserReportExportMenu` ).
 
+
+
 ##### Search model 
 
  This model is able to fetch its attributes, validation rules and filtering logic .
@@ -90,9 +96,14 @@ The data to be requested from the user will be represented by an `UserReport` mo
 
 ```
 use yii\base\Model;
+use codexten\yii\modules\report\reports\ReportInterface;
+use codexten\yii\modules\report\reports\ReportTrait;use codexten\tms\sourcing\core\helpers\BroadcastHelper;
+use codexten\tms\sourcing\core\models\Broadcast;
 
 class UserReport extends Model implements ReportInterface
 {
+	use ReportTrait;
+ 	
  	public $name;
  	public $phn_no;
 	public $email;
@@ -121,6 +132,17 @@ class UserReport extends Model implements ReportInterface
             'email'  => 'Email',
         ];
     }
+    
+    //To get the base query
+     protected function getBaseQuery()
+    {
+        $query = User::find()
+            ->alias('user')
+            ->distinct('user.id')
+            ->joinWith('broadcast as broadcast');
+
+        return $query;
+    }
 
 }
 ```
@@ -130,7 +152,9 @@ represent form data.The class implements from [[codexten\yii\modules\report\repo
 
 The `UserReport` class contains three public members, `name` ,`phn_no` and `email`, which are used to store the data entered by the user.
 
+Trait `ReportTrait` is extended from  [[codexten\yii\modules\report\reports\ReportTrait]].
 
+In `getBaseQuery()` function, model `User` is extended from iteself.
 
 ##### GridView Class
 
