@@ -71,3 +71,39 @@ To generate migration
 ## customization
 
 TBD
+
+### CRUD GENERATION
+
+- CRUD stands for create-read-update-delete
+
+  - In gii.yml  file 
+
+    ```
+    crud:
+      customer_group:
+        modelClass: codexten\ecommerce\core\models\CustomerGroup
+        namespace: codexten\ecommerce\admin\
+    ```
+
+  - Run the command in Terminal
+
+    `./vendor/bin/hidev gii/crud packagename `
+
+  
+
+
+
+
+
+
+
+
+
+
+​	
+
+
+
+
+
+​	
