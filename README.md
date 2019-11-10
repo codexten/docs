@@ -11,6 +11,7 @@ All codexten packages documentation
 * [Auth Module](yii-module-auth)
 * [User Module](yii-module-user)
 * [Country Module](yii-module-country)
+* [Enquiry Module](yii-module-enquiry)
 * [Geo Module](yii-module-geo)
 * [Console App](yii-app-console)
 * [Report Module](yii-module-report)
