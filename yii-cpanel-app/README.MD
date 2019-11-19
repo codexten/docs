@@ -22,7 +22,7 @@
 ## Installation
 
 ```ssh
-git clone git@github.com:codexten/yii-cpanel-app.git
+git clone https://github.com/codexten/yii-cpanel-app.git cpanel
 cd cpanel
 cp .env.dist .env
 cp hidev-local.yml.dist hidev-local.yml
